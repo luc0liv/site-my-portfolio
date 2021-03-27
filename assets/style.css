@@ -1,0 +1,161 @@
+/* CSS HEX */
+:root {
+--ghost-white: #f3eff5ff;
+--eerie-black: #191919ff;
+--claret: #8d163eff;
+--dark-magenta: #952387ff;
+--verdigris: #26b0baff;
+--silver-sand: #c5ced3ff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--ghost-white);
+}
+
+nav ul {
+
+    border-bottom: 2px solid var(--eerie-black);
+    width: 100%;
+    display: flex;
+    justify-content: start ;
+    position: fixed;
+    top: 0;
+    
+}
+
+
+nav ul li {
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: 14pt;
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+  
+}
+
+nav li a {
+    color: var(--claret);
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+
+nav li a:hover {
+    background-color: var(--dark-magenta);
+    color: var(--ghost-white);
+}
+
+
+.avatar img {
+    object-fit: contain;
+}
+
+.presentation {
+
+    background-color: var(--silver-sand);
+    color:var(--eerie-black);
+    margin-top: 10%;
+    padding: 20px;
+    transition: ease-in-out 2s;
+    width: 100%;
+}
+
+.presentation:hover {
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px 5px rgba(25, 25, 25, 0.5);
+}
+
+.project {
+
+    display: grid;
+    background-color: var(--verdigris);
+    color:var(--eerie-black);
+    padding: 20px;
+    transition: ease-in-out 2s;
+    width: 100%;
+
+}
+
+.project:hover {
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px 5px rgba(25, 25, 25, 0.5);
+}
+
+.where {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color:var(--eerie-black);
+    padding: 20px;
+    transition: ease-in-out 2s;
+    width: 100%;
+    
+}
+
+.where:hover {
+
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px 5px rgba(25, 25, 25, 0.5);
+
+}
+
+
+.recado {
+
+    background-color: var(--silver-sand);
+    /*margin: 0% 10% 0% 10%;*/
+    padding: 40px;
+    width:fit-content;
+    align-content: center;
+}
+
+label {
+    color:var(--claret);
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+}
+
+input , textarea{
+    border-radius: 4px; 
+    border: 1px solid var(--silver-sand);
+    box-sizing: border-box; 
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 12px; 
+    resize: vertical;
+    width: 100%; 
+}
+
+.btn {
+    background-color: var(--verdigris);
+    border-radius: 5px;
+    color: var(--ghost-white);
+    padding: 10px 20px 10px 20px;
+}
+
+.btn:hover {
+    background-color: var(--claret);
+}
+
+@media only screen and (max-width: 600px) {
+    .where {
+        flex-wrap: wrap;
+    }
+
+    #cont {
+        width:0%;
+        visibility: hidden;
+    }
+
+    .recado {
+
+        width: fit-content;
+    }
+}
