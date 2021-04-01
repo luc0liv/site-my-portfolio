@@ -1,64 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/style.css" type="text/css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Raleway&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
 <body>
-<nav>
-    <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
-    </ul>
-</nav>
+	<header>
+		<nav>
 
-<main class="container">
-<section class="presentation" id="sobre">
+			<div class="logo">
+				<img src="./assets/img/l.svg" alt="">
+			</div>
 
-    <h4>Olá, meu nome é Luciana!</h4>
-   
-    
-    <div>
-         <img class="avatar" src="assets/img/avatarLuc.png" width="300px">
-    </div>
+			<ul>
+				<li><a href="#sobre">Sobre</a></li>
+				<li><a href="#projects">Projetos</a></li>
+				<li><a href="#contato">Contato</a></li>
+			</ul>
 
-</section>
+		</nav>
+	</header>
 
-<section class="project" id="projects">
+	<main class="container">
+		<section class="presentation" id="sobre">
 
-    <h4>Olá, meu nome é Luciana!</h4>
-    
-    <div>
-         <img class="avatar" src="assets/img/avatarLuc.png" width="300px">
-    </div>
+			<div class="avatar">
+				<img src="assets/img/avatarLuc.png">
+			</div>
 
-</section>
-<section class="where" id="contato">
+			<article>
+				<h4 class="greetings typing-ani">Olá, meu nome é Luciana Oliveira!</h4>
+
+				<div class="text">
+					<div class="icon-loc">
+						<img src="./assets/img/programming.svg" width="40px" alt="Programação">
+					</div>
+						<p> Formada em Programação Full Stack pela Recode Pro || Turma de 2020. </p>
+				</div>
+				<div class="text">
+					<div class="icon-loc">
+						<img src="./assets/img/mortarboard.svg" width="40px" alt="Formação">
+					</div>
+						<p> Graduada em Publicidade e Propaganda pela Universidade Estácio de Sá || 2019.2 </p>
+				</div>
+				<div class="text">
+					<div class="icon-loc">
+						<img src="./assets/img/pin.svg" width="40px" alt="Localidade">
+					</div>
+						<p>Moro em Maricá, um município localizado na região metropolitana do Rio de Janeiro.</p>
+					</div>
+				<div class="text">
+					<div class="icon-loc">
+						<img src="./assets/img/plus.svg" width="40px" alt="Saiba mais">
+					</div>
+						<p>Quer saber mais sobre mim? Conecte-se ao meu <a style="text-decoration: none ; color: #8d163eff;" href="https://www.linkedin.com/in/lucoliv/" target="_blank"><b>Linkedin</b></a> </p>
+				</div>
+			</article>
+
+		</section>
+		<hr>
+		<section class="project" id="projects">
+			<H1>Projetos</H1>
+		</section>
+
+		<section class="where" id="contato">
+
+			<img id="cont" src="assets/img/contacts.svg" width="50%">
+
+			<form class="recado">
+				<label for="nome">Nome</label>
+				<input type="text" placeholder="Digite seu nome completo..." required>
+
+				<label for="email">E-mail</label>
+				<input type="email" placeholder="Digite seu email..." required>
+
+				<label for="msg">Sua mensagem</label>
+				<textarea placeholder="Digite sua mensagem aqui..." required></textarea>
+
+				<input type="submit" class="btn" value="Enviar"></input>
+
+				<div class="social">
+					<a href="https://github.com/luc0liv" target="_blank"> <img src="./assets/img/github (1).svg" alt="Github"></a>
+					<a href="https://www.linkedin.com/in/lucoliv/" target="_blank"> <img src="./assets/img/linkedin.svg"
+							alt="Linkedin"></a>
+					<a href="https://www.instagram.com/luc0liv/" target="_blank"> <img src="./assets/img/instagram.svg"
+							alt="Instagram"></a>
+					<a href="mailto:luoliveiradacunha@gmail.com" target="_blank"> <img src="./assets/img/email.svg"
+							alt="Email"></a>
+				</div>
+			</form>
+
+		</section>
+	</main>
+
+	<footer>
+		<p>Luciana Oliveira da Cunha, 2021</p>
+
+		<div id="voltarTopo">
+			<a href="#" id="subir"><img src="./assets/img/up.svg" alt="Voltar ao topo"></a>
+		</div>
+
+		<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+				href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+	</footer>
 
 
-    <img id="cont" src="assets/img/contacts.svg" width="50%">
-
-
-
-    <form class="recado">
-        <label for="nome">Nome</label>
-        <input type="text" placeholder="Digite seu nome completo..." required>
-
-        <label for="email">E-mail</label>
-        <input type="email" placeholder="Digite seu email..."  required>
-
-        <label for="msg">Sua mensagem</label>
-        <textarea placeholder="Digite sua mensagem aqui..." required></textarea>
-
-        <input type="submit" class="btn" value="Enviar"></input>
-    </form>
-
-</section>
-</main>
 </body>
+
 </html>
