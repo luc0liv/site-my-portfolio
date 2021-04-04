@@ -45,7 +45,7 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-right: 1%;
 }
 
@@ -495,12 +495,16 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
+
+  .nav-bar.responsive ul {
+    display: inline;
+  }
   .nav-bar.responsive {
     position: relative;
   }
   .nav-bar.responsive .icon {
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
     margin: 10px;
   }
