@@ -9,36 +9,30 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Raleway&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body>
 	<header>
-		<nav>
-
+		<nav class="nav-bar" id="toggle">
 			<div class="logo">
 				<img src="./assets/img/l.svg" alt="">
 			</div>
-
 			<ul>
 				<li><a href="#sobre">Sobre</a></li>
 				<li><a href="#projects">Projetos</a></li>
 				<li><a href="#contato">Contato</a></li>
+				<a href="javascript:void(0);" class="icon" onclick="toggler()"><img src="./assets/img/menu.svg" alt="" width="40px" style="margin: 20px 2px"></a>
 			</ul>
-
 		</nav>
 	</header>
-
-	<main class="container">
+	<main>
 		<section class="presentation" id="sobre">
-
 			<div class="avatar">
 				<img src="assets/img/avatarLuc.png">
 			</div>
-
 			<article>
 				<h4 class="greetings typing-ani">Olá, meu nome é Luciana Oliveira!</h4>
+				<h4 class="greet2">Olá, meu nome é Luciana Oliveira!</h4>
 
 				<div class="text">
 					<div class="icon-loc">
@@ -66,7 +60,6 @@
 							href="https://www.linkedin.com/in/lucoliv/" target="_blank"><b>Linkedin</b></a> </p>
 				</div>
 			</article>
-
 		</section>
 
 		<section class="project" id="projects">
@@ -74,27 +67,22 @@
 			<hr>
 				<div class="videos">
 					<div class="py">
-							<video width="640" height="480" controls>
+						<video width="100%" height="auto" controls>
 							<source src="./assets/img/videos/calc-py.mp4" type="video/mp4">
-
-						Your browser does not support the video tag.
 						</video>
-					<article>
+					<p>
 						Calculadora criada com Python, utilizando o framework Flask.
-					</article>
+					</p>
 				</div>
-
 				<div class="py">
-					<video width="640" height="480" controls>
-					<source src="./assets/img/videos/calc-py.mp4" type="video/mp4">
-
-				Your browser does not support the video tag.
-				</video>
-			<article>
-				Calculadora criada com Python, utilizando o framework Flask.
-			</article>
-		</div>
+					<video width="100%" height="auto" controls>
+						<source src="./assets/img/videos/calc-py.mp4" type="video/mp4">
+					</video>
+					<p>
+						Calculadora criada com Python, utilizando o framework Flask.
+					</p>
 				</div>
+			</div>
 		</section>
 
 		<section class="where" id="contato">
@@ -128,7 +116,7 @@
 	</main>
 
 	<footer>
-		<p>Luciana Oliveira da Cunha, 2021</p>
+		<p>&copy; Luciana Oliveira da Cunha, 2021</p>
 		<div class="repo">
 			<a href="https://github.com/luc0liv/site-my-portfolio"><img src="./assets/img/github (1).svg"  alt="">Link para o repositório desse projeto </a>
 		</div>
@@ -143,7 +131,7 @@
  		</div>
 	</footer>
 
-
+	<script src="./assets/index.js"></script>
 </body>
 
 </html>

@@ -5,3 +5,13 @@ $(document).ready(function() {
 	});
 });
 
+
+	function toggler() {
+		var x = document.getElementById("toggle");
+		if (x.className === "nav-bar") {
+			x.className += " responsive";
+		}
+		else {
+			x.className = "nav-bar";
+		}
+	}
