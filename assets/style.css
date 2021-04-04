@@ -209,14 +209,15 @@ hr {
 .py p {
   background-color: #8d163eb3;
   font: 20pt 'Montserrat';
-  padding: 2%;
-  text-align: center;
+  padding: 1%;
+  text-align: left;
 }
 
 .py a {
   color: var(--verdigris);
   font: 14pt 'Montserrat';
   text-decoration: none;
+
 }
 
 .where {
